@@ -19,7 +19,7 @@ int main() {
     
     livre1 = creerLivre("aaaaa", "bbbbb", 2005);
 
-    printf("Titre : %s\nAuteur : %s\Anne : %d\n", livre1.titre, livre1.auteur, livre1.annee);
+    printf("Titre : %s\nAuteur : %s\nAnne : %d\n", livre1.titre, livre1.auteur, livre1.annee);
     
     return 0;
 

@@ -54,7 +54,6 @@ void modifiercontact() {
     char nom[50];
     printf("Entrez le nom du contact modifier : ");
     scanf("%s", nom);
-    
     int i = rechercherContact(nom);
     if (i != -1) {
         printf("Entrez le nouveau numero de telephone : ");
@@ -72,12 +71,10 @@ void supprimerContact(){
 char nom[50];
     printf("Entrez le nom du contact a supprimer : ");
     scanf("%s", nom);
-    
     int index = rechercherContact(nom);
     if (index != -1) {
         for (int i = index; i < nbrcontacts - 1; i++) {
              contacts[i] = contacts[i + 1];
-            
         }
         nbrcontacts--;
         printf("Contact est supprime\n");
